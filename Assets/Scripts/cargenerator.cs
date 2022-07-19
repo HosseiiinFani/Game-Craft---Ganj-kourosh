@@ -1,11 +1,10 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
-public class cargenerator : MonoBehaviour
+public class CarGenerator : MonoBehaviour
 {
-    public GameObject carPrefab;
+    public GameObject[] carPrefab;
     
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -13,7 +12,6 @@ public class cargenerator : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -23,9 +21,9 @@ public class cargenerator : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2f);
-            GameObject newcar = Instantiate(carPrefab);
-            newcar.transform.position = transform.position;
+            yield return new WaitForSeconds(4f);
+             int randomIndex = Random.Range(0, carPrefab.Length);
+            GameObject instantiatedObject = Instantiate(carPrefab[randomIndex], new Vector3(-19,0,-15) ,Quaternion.identity) as GameObject;
         }
         }
 
