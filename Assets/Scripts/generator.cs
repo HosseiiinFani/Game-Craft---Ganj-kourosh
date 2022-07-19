@@ -1,29 +1,15 @@
 using UnityEngine;
 
-public class cargenerator : MonoBehaviour
-{
-    public GameObject carPrefab;
-    
-    void Start()
-    {
+public class cargenerator: MonoBehaviour {
+    public GameObject[] myObjects;
 
-            StartCoroutine(GneratorCars());
-
-    }
-
-    void Update()
-    {
+ void Update() {
         
-    }
 
-    private IEnumerator GneratorCars()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(2f);
-            GameObject newcar = Instantiate(carPrefab);
-            newcar.transform.position = transform.position;
-        }
-        }
+        int randomIndex = Random.Range(0, myObjects.Length);
+        Vector3 RandomSpawnPosition = new Vector3(Random.Range(-20,-90),0, Random.Range(1,-8));
+        GameObject instantiatedObject = Instantiate(myObjects[randomIndex], RandomSpawnPosition , Quaternion.identity) as GameObject;
 
-    }
+  }
+
+}
