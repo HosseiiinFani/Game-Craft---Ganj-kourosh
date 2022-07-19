@@ -21,7 +21,7 @@ public class CarGenerator : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2.0f);
              int randomIndex = Random.Range(0, carPrefab.Length);
             GameObject instantiatedObject = Instantiate(carPrefab[randomIndex], new Vector3(-19,0,-15) ,Quaternion.identity) as GameObject;
         }
