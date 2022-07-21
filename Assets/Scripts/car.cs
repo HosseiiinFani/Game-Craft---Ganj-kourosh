@@ -13,6 +13,7 @@ public class car : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag = "Car";
         rb = GetComponent<Rigidbody>();
         x = rb.position.x;
         z = rb.position.z;

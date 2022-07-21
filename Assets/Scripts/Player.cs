@@ -15,6 +15,14 @@ public class Player : MonoBehaviour {
 
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Car")
+        {
+            Debug.Log("end"); // end the game @Parham
+        }
+    }
+
     private void Update() {
         transform.localEulerAngles = new Vector3(0, -90, 0);
         SwipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
