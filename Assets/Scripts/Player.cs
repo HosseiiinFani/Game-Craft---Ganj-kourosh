@@ -10,6 +10,8 @@ public class Player : MonoBehaviour {
     public bool SwipeRight;
     public float XValue;
     private CharacterController m_char;
+    public float speed = 80.0f;
+    public Rigidbody player;
 
     private void Start() {
         m_char = GetComponent<CharacterController>();
@@ -44,7 +46,6 @@ public class Player : MonoBehaviour {
 
             }
     }
-    m_char.Move((newXPose-transform.position.x) * Vector3.right);
-
+        m_char.Move((newXPose-transform.position.x) * Vector3.right);
 }
 }
