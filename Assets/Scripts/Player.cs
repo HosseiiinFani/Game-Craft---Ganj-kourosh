@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Player : MonoBehaviour {
-    
+
     bool SwipeLeft;
     bool SwipeRight;
     public float speed = 0.2f;
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
             }
         }
         x -= speed;
-        transform.position = new Vector3(x , velocity.y , lines[currentLane]);   
+        transform.position = new Vector3(x , 0 , lines[currentLane]);   
     }
 
 }
