@@ -34,6 +34,9 @@ public class obstacleGenerator : MonoBehaviour {
                     Obstacle selectedPrefab = objects[objectIndex];
                     GameObject obstacle = Instantiate(selectedPrefab.obstacle, position, Quaternion.identity);
                     obstacle.transform.localScale = new Vector3(selectedPrefab.scaleX * 0.85f, selectedPrefab.scaleY * 0.85f, selectedPrefab.scaleZ * 0.85f);
+                    obstacle.tag = "Obstacle";
+                    BoxCollider bc = obstacle.AddComponent<BoxCollider>() as BoxCollider;
+                    bc.size = new Vector3(selectedPrefab.scaleX * 0.01f, selectedPrefab.scaleY * 0.01f, selectedPrefab.scaleZ * 0.01f);
                 }
             }
         }
