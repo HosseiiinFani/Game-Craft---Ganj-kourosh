@@ -11,17 +11,20 @@ public class Player : MonoBehaviour {
     public float speed = 0.2f;
     private int[] lines = {-8, -4, 0};
     private int currentLane = 1;
-    private float x = 0;
+
     public float JumpPower = 8f;
     private float y;
     private CharacterController m_char;
     private Animator m_animator;
     public bool InJump;
 
+    public float x = 0;
+    public Vector3 spawn = new Vector3(0, 0, -4);
+
     private void Start() {
-        transform.position = new Vector3(0 , 0 , lines[currentLane]);
         m_char = GetComponent<CharacterController>();
         m_animator = GetComponent<Animator>();
+        transform.position = spawn;
     }
 
     void OnCollisionEnter(Collision collision)
