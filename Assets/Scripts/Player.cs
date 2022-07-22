@@ -11,12 +11,7 @@ public class Player : MonoBehaviour {
     public float speed = 0.2f;
     private int[] lines = {-8, -4, 0};
     private int currentLane = 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private float x = 0;
-=======
 
->>>>>>> 35d7abf5e9b8ac215ca3eb92bb8a9e8d641d10e4
     public float JumpPower = 8f;
     private float y = 0f;
     private Animator m_animator;
@@ -30,22 +25,8 @@ public class Player : MonoBehaviour {
 
     private void Start() {
         m_animator = GetComponent<Animator>();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    public float x = 0;
-    public Vector3 spawn = new Vector3(0, 0, -4);
-
-    private void Start() {
-=======
         rb = GetComponent<Rigidbody>();
->>>>>>> 31fe3ac798268fac8e14b156119c8b45bf7d5060
         transform.position = spawn;
-
->>>>>>> ddb76c40c3e4b2c3914af469e66de7e6fedb8023
-=======
-        transform.position = spawn;
->>>>>>> 35d7abf5e9b8ac215ca3eb92bb8a9e8d641d10e4
     }
 
     void OnCollisionEnter(Collision collision)
