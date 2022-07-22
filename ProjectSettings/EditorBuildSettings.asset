@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/City.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scenes/loading.unity
+    path: 
     guid: 11642fc5a1e1db942980da8f28416c91
   - enabled: 1
     path: Assets/Scenes/Menu.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 3e7e67fb3c40b4adb96cf10093ddfa28
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: bb40e41af7209450c8d93083a5ba2f62
   m_configObjects: {}
