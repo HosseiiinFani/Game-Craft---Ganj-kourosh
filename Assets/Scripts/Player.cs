@@ -13,17 +13,19 @@ public class Player : MonoBehaviour {
     private int currentLane = 1;
 
     public float JumpPower = 8f;
-    private float y;
-    private CharacterController m_char;
+    private float y = 0f;
     private Animator m_animator;
     public bool InJump;
+    public bool isGrounded = true;
+
+    private Rigidbody rb;
 
     public float x = 0;
     public Vector3 spawn = new Vector3(0, 0, -4);
 
     private void Start() {
-        m_char = GetComponent<CharacterController>();
         m_animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
         transform.position = spawn;
     }
 
@@ -35,13 +37,19 @@ public class Player : MonoBehaviour {
             Destroy(gameObject);
             SceneManager.LoadScene("Menu");
         }
+        if (collision.gameObject.tag == "Portal_Forest"){
+            SceneManager.LoadScene("Forest");
+        }
+        if (collision.gameObject.tag == "Untagged"){
+            isGrounded = true;
+        }
     }
 
     private void Update() {
         transform.localEulerAngles = new Vector3(0, -90, 0);
         SwipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
         SwipeRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
-        SwipeUp = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
+        SwipeUp = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetButton("Jump");
         if (SwipeLeft)
         {   m_animator.Play("TurnLeft");
             if ( currentLane > 0 ){
@@ -54,30 +62,29 @@ public class Player : MonoBehaviour {
                 currentLane += 1;
             }
         }
-        x -= speed;
-        transform.position = new Vector3(x , y*Time.deltaTime , lines[currentLane]);   
-    }
-
-
-    public void jump()
-    {
-        if (m_char.isGrounded)
+        if (isGrounded)
         {
             if(m_animator.GetCurrentAnimatorStateInfo(0).IsName("Fall"))
             {
                 m_animator.Play("Fall");
                 InJump = false;
+                isGrounded = true;
             }
             if (SwipeUp)
             {
-                y = JumpPower;
-                m_animator.CrossFadeInFixedTime("BasicMotions@jump" , 0.1f);
+                isGrounded = false;
                 InJump = true;
+                rb.AddForce(0, JumpPower, 0, ForceMode.Impulse);
+                m_animator.CrossFadeInFixedTime("BasicMotions@jump" , 0.1f);
             } else
             {
-                y -= JumpPower * 2 * Time.deltaTime;
+                isGrounded = true;
                 m_animator.Play("Fall");
             }   
         }
+ 
+        x -= speed;
+        transform.position = new Vector3(x , transform.position.y , lines[currentLane]);   
     }
+
 }

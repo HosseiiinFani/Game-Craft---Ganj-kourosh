@@ -2672,7 +2672,7 @@ GameObject:
   - component: {fileID: 80596829}
   m_Layer: 0
   m_Name: Street (31)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5015,7 +5015,7 @@ GameObject:
   - component: {fileID: 160265097}
   m_Layer: 0
   m_Name: Street (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5066,7 +5066,7 @@ GameObject:
   - component: {fileID: 164963406}
   m_Layer: 0
   m_Name: Street (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7472,7 +7472,7 @@ GameObject:
   - component: {fileID: 235745015}
   m_Layer: 0
   m_Name: Street (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8338,7 +8338,7 @@ GameObject:
   - component: {fileID: 274809109}
   m_Layer: 0
   m_Name: Street (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9851,7 +9851,7 @@ GameObject:
   - component: {fileID: 315278790}
   m_Layer: 0
   m_Name: Street (32)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10261,7 +10261,7 @@ GameObject:
   - component: {fileID: 325242213}
   m_Layer: 0
   m_Name: Street (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16496,7 +16496,7 @@ GameObject:
   - component: {fileID: 502792590}
   m_Layer: 0
   m_Name: Street
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16598,7 +16598,7 @@ GameObject:
   - component: {fileID: 505512621}
   m_Layer: 0
   m_Name: Street (29)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17672,7 +17672,7 @@ GameObject:
   - component: {fileID: 546705197}
   m_Layer: 0
   m_Name: Street (38)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19893,7 +19893,7 @@ GameObject:
   - component: {fileID: 640377981}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21915,7 +21915,7 @@ GameObject:
   - component: {fileID: 697669737}
   m_Layer: 0
   m_Name: Street (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23309,6 +23309,50 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &754027133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754027134}
+  - component: {fileID: 754027135}
+  m_Layer: 0
+  m_Name: Portal
+  m_TagString: Portal_Forest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754027134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754027133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -169, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &754027135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754027133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 31.848688, z: 63.255497}
+  m_Center: {x: 0, y: 15.424344, z: -0.51815224}
 --- !u!1001 &754434828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23389,7 +23433,7 @@ GameObject:
   - component: {fileID: 755467119}
   m_Layer: 0
   m_Name: Street (44)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23428,7 +23472,7 @@ GameObject:
   - component: {fileID: 756521211}
   m_Layer: 0
   m_Name: Street (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25486,7 +25530,7 @@ GameObject:
   - component: {fileID: 815879543}
   m_Layer: 0
   m_Name: Street (37)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28818,7 +28862,7 @@ GameObject:
   - component: {fileID: 906999255}
   m_Layer: 0
   m_Name: Street (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28920,7 +28964,7 @@ GameObject:
   - component: {fileID: 909380062}
   m_Layer: 0
   m_Name: Street (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30043,7 +30087,7 @@ GameObject:
   - component: {fileID: 950972702}
   m_Layer: 0
   m_Name: Street (35)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31789,7 +31833,7 @@ GameObject:
   - component: {fileID: 1014808730}
   m_Layer: 0
   m_Name: Street (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31860,7 +31904,7 @@ GameObject:
   - component: {fileID: 1019224265}
   m_Layer: 0
   m_Name: Street (42)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33715,7 +33759,7 @@ GameObject:
   - component: {fileID: 1088428811}
   m_Layer: 0
   m_Name: Street (39)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35197,7 +35241,7 @@ GameObject:
   - component: {fileID: 1129221847}
   m_Layer: 0
   m_Name: Street (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35499,7 +35543,7 @@ GameObject:
   - component: {fileID: 1139251730}
   m_Layer: 0
   m_Name: Street (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35952,7 +35996,7 @@ GameObject:
   - component: {fileID: 1157789740}
   m_Layer: 0
   m_Name: Street (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36198,7 +36242,7 @@ GameObject:
   - component: {fileID: 1160562600}
   m_Layer: 0
   m_Name: Street (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36537,7 +36581,7 @@ GameObject:
   - component: {fileID: 1174297614}
   m_Layer: 0
   m_Name: Street (36)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38569,7 +38613,7 @@ GameObject:
   - component: {fileID: 1224532267}
   m_Layer: 0
   m_Name: Street (26)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41214,7 +41258,7 @@ GameObject:
   - component: {fileID: 1294444966}
   m_Layer: 0
   m_Name: Street (33)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41409,7 +41453,7 @@ GameObject:
   - component: {fileID: 1306152171}
   m_Layer: 0
   m_Name: Street (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41975,7 +42019,7 @@ GameObject:
   - component: {fileID: 1330271098}
   m_Layer: 0
   m_Name: Street (43)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44958,7 +45002,7 @@ GameObject:
   - component: {fileID: 1416340396}
   m_Layer: 0
   m_Name: Street (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46495,7 +46539,7 @@ GameObject:
   - component: {fileID: 1469884534}
   m_Layer: 0
   m_Name: Street (19)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48008,7 +48052,7 @@ GameObject:
   - component: {fileID: 1525033968}
   m_Layer: 0
   m_Name: Street (30)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48995,7 +49039,7 @@ GameObject:
   - component: {fileID: 1542358122}
   m_Layer: 0
   m_Name: Street (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49147,6 +49191,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
+  JumpPower: 20
+  InJump: 0
+  isGrounded: 1
   x: 10
   spawn: {x: 10, y: 0, z: -4}
 --- !u!54 &1544998733
@@ -49269,7 +49316,7 @@ GameObject:
   - component: {fileID: 1553287511}
   m_Layer: 0
   m_Name: Street (21)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51217,7 +51264,7 @@ GameObject:
   - component: {fileID: 1586497082}
   m_Layer: 0
   m_Name: Street (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51532,7 +51579,7 @@ GameObject:
   - component: {fileID: 1592836109}
   m_Layer: 0
   m_Name: Street (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52949,7 +52996,7 @@ GameObject:
   - component: {fileID: 1662459533}
   m_Layer: 0
   m_Name: Street (20)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54036,7 +54083,7 @@ GameObject:
   - component: {fileID: 1703354834}
   m_Layer: 0
   m_Name: Street (40)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57131,7 +57178,7 @@ GameObject:
   - component: {fileID: 1796373799}
   m_Layer: 0
   m_Name: Street (28)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60799,7 +60846,7 @@ GameObject:
   - component: {fileID: 1914934625}
   m_Layer: 0
   m_Name: Street (34)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61173,7 +61220,7 @@ GameObject:
   - component: {fileID: 1938355667}
   m_Layer: 0
   m_Name: Street (27)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62741,7 +62788,7 @@ GameObject:
   - component: {fileID: 1977294691}
   m_Layer: 0
   m_Name: Street (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63953,7 +64000,7 @@ GameObject:
   - component: {fileID: 2017537860}
   m_Layer: 0
   m_Name: Street (25)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66267,7 +66314,7 @@ GameObject:
   - component: {fileID: 2099846710}
   m_Layer: 0
   m_Name: Street (22)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67019,7 +67066,7 @@ GameObject:
   - component: {fileID: 2141700085}
   m_Layer: 0
   m_Name: Street (41)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
