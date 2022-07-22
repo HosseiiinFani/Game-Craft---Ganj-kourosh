@@ -260,8 +260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.172, y: 0.44610775}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -111, y: -136.6372}
-  m_SizeDelta: {x: 252.8606, y: 273.2743}
+  m_AnchoredPosition: {x: -117.994965, y: -136.64}
+  m_SizeDelta: {x: 235.9999, y: 273.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &56046965
 MonoBehaviour:
@@ -329,7 +329,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -432,8 +432,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: -174.63861}
-  m_SizeDelta: {x: 232.4187, y: 112.684}
+  m_AnchoredPosition: {x: -141, y: -152.90102}
+  m_SizeDelta: {x: 338.7339, y: 102.486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515061283
 MonoBehaviour:
@@ -478,7 +478,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 515061284}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 679716083}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &515061284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,8 +566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73, y: -23.7144}
-  m_SizeDelta: {x: 231.9148, y: 78.6572}
+  m_AnchoredPosition: {x: -28.7708, y: -17.4208}
+  m_SizeDelta: {x: 271.82, y: 150.9984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641886974
 MonoBehaviour:
@@ -600,7 +612,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641886975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 679716083}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &641886975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,8 +799,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -811,7 +835,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -9.181351, z: 64.85019, w: 20.467552}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -876,7 +900,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 53.574577
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -902,7 +926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664300820}
   m_LocalRotation: {x: -0.028803006, y: -0.00249774, z: -0.00013450802, w: -0.999582}
-  m_LocalPosition: {x: 484.46, y: 200.42, z: -349.76}
+  m_LocalPosition: {x: 466.35, y: 200.41, z: -349.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1011,7 +1035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 38.5504, y: 28.1286}
+  m_AnchoredPosition: {x: 56, y: 32}
   m_SizeDelta: {x: 71.3282, y: 58.2571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112101809
@@ -1061,10 +1085,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 82
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
@@ -1097,7 +1121,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 136.87073, y: 30.399216, z: 13.797882, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
