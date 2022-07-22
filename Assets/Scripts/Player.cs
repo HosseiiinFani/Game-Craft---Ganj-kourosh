@@ -49,7 +49,6 @@ public class Player : MonoBehaviour {
         transform.localEulerAngles = new Vector3(0, -90, 0);
         SwipeLeft = Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
         SwipeRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
-        SwipeUp = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetButton("Jump");
         if (SwipeLeft)
         {   m_animator.Play("TurnLeft");
             if ( currentLane > 0 ){
@@ -62,6 +61,12 @@ public class Player : MonoBehaviour {
                 currentLane += 1;
             }
         }
+
+ 
+    }
+
+    private void FixedUpdate() {
+        SwipeUp = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetButton("Jump");
         if (isGrounded)
         {
             if(m_animator.GetCurrentAnimatorStateInfo(0).IsName("Fall"))
@@ -82,7 +87,6 @@ public class Player : MonoBehaviour {
                 m_animator.Play("Fall");
             }   
         }
- 
         x -= speed;
         transform.position = new Vector3(x , transform.position.y , lines[currentLane]);   
     }
