@@ -13,4 +13,8 @@ public class MenuManager : MonoBehaviour
         Debug.Log ("Quit!");
         Application.Quit();
     }
+        public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }

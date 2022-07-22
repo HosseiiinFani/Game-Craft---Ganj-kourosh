@@ -43,6 +43,9 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.tag == "Untagged"){
             isGrounded = true;
         }
+        if (collision.gameObject.tag == "End"){
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     private void Update() {
