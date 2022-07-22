@@ -1,10 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
     bool SwipeLeft;
     bool SwipeRight;
+    bool jump;
     public float speed = 0.2f;
     private int[] lines = {-8, -4, 0};
     private int currentLane = 1;
@@ -19,7 +21,9 @@ public class Player : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Car")
         {
-            Debug.Log("end"); // end the game @Parham
+            Destroy(collision.collider.gameObject);
+            Destroy(gameObject);
+            SceneManager.LoadScene("Menu");
         }
     }
 
