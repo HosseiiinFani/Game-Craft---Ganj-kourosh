@@ -22,7 +22,7 @@ public class obstacleGenerator : MonoBehaviour {
     private void Start() {
         for( int layer = 0 ; layer < layers ; layer++ ) {
             List<int> remainingChoices = new List<int>(z_choices);
-            for( int line = 0 ; line < 3 ; line++ ) {
+            for( int line = 0 ; line < 2 ; line++ ) {
                 int generate = should_generate.Next(100);
                 if ( generate >= 50 ) {
                     int index = z_random.Next(remainingChoices.Count);
@@ -36,7 +36,7 @@ public class obstacleGenerator : MonoBehaviour {
                     obstacle.transform.localScale = new Vector3(selectedPrefab.scaleX * 0.85f, selectedPrefab.scaleY * 0.85f, selectedPrefab.scaleZ * 0.85f);
                     obstacle.tag = "Obstacle";
                     BoxCollider bc = obstacle.AddComponent<BoxCollider>() as BoxCollider;
-                    bc.size = new Vector3(selectedPrefab.scaleX * 0.01f, selectedPrefab.scaleY * 0.01f, selectedPrefab.scaleZ * 0.01f);
+                    bc.size = new Vector3(selectedPrefab.scaleX * 0.1f, selectedPrefab.scaleY * 0.1f, selectedPrefab.scaleZ * 0.1f);
                 }
             }
         }
