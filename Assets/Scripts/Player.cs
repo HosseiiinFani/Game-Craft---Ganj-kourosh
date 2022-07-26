@@ -83,7 +83,7 @@ public class Player : MonoBehaviour {
                 isGrounded = false;
                 InJump = true;
                 rb.AddForce(0, JumpPower, 0, ForceMode.Impulse);
-                m_animator.CrossFadeInFixedTime("BasicMotions@jump" , 0.1f);
+                m_animator.CrossFadeInFixedTime("Fall" , 0.1f);
             } else
             {
                 isGrounded = true;
