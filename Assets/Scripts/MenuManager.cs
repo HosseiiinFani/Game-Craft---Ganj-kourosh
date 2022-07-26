@@ -18,8 +18,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Credits");
     }
 
-    public void BackToMainMenu()
+    public void Back()
     {
+        Debug.Log("BACK");
         SceneManager.LoadScene("Menu");
     }
 }
